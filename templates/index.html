@@ -1,0 +1,633 @@
+{% extends 'Base.html'%}
+
+{% load static %}
+ 
+ {%block title %} Accueil {%endblock%}
+{%block content%}
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(/static/img/bg-img/hero-1.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="hero-content">
+                        <h2>Découvrir l'Adamaoua</h2>
+                        <h4>Ceci est le meilleur guide touristique de la région</h4>
+                    </div>
+                    <!-- Hero Search Form -->
+                    <div class="hero-search-form">
+                        <!-- Tabs -->
+                        <div class="nav nav-tabs" id="heroTab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-site-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">Sites</a>
+                            <a class="nav-item nav-link" id="nav-restaurant-tab" data-toggle="tab" href="#nav-restaurant" role="tab" aria-controls="nav-places" aria-selected="true">Restaurants</a>
+                            <a class="nav-item nav-link" id="nav-hotel-tab" data-toggle="tab" href="#nav-hotel" role="tab" aria-controls="nav-places" aria-selected="true">Hotels</a>
+                            <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab"  role="tab" aria-controls="nav-events" aria-selected="false" href="#nav-events">Evenements</a>
+                        </div>
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-site-tab">
+                                <h6>Que cherchez-vous?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Votre Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-restaurant" role="tabpanel" aria-labelledby="nav-restaurant-tab">
+                                <h6>Que cherchez-vous?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Your Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-hotel" role="tabpanel" aria-labelledby="nav-hotel-tab">
+                                <h6>Que cherchez-vous?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Your Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
+                                <h6>Que cherchez-vous?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Your Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Social Btn -->
+        <div class="hero-social-btn">
+            <div class="social-title d-flex align-items-center">
+                <h6>Suivez-nous sur les reseaux sociaux</h6>
+                <span></span>
+            </div>
+            <div class="social-btns">
+                <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Catagory Area Start ***** -->
+    <section class="dorne-catagory-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="all-catagories">
+                        <div class="row">
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.2s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-1.png' %}" alt="">
+                                        <a href="{% url 'hotel:hotel' %}">
+                                            <h6>Hotels</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.4s">
+                                    <div class="catagory-content">
+                                        <img src=" {% static 'img/core-img/icon-2.png' %} " alt="">
+                                        <a href="{% url 'restaurant:restaurant' %}">
+                                            <h6>Restaurants</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.6s">
+                                    <div class="catagory-content">
+                                        <img src=" {% static 'img/core-img/icon-3.png' %} " alt="">
+                                        <a href="{% url 'evenement:evenement' %}">
+                                            <h6>Evenements</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.8s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-4.png' %} " alt="">
+                                        <a href="{% url 'sitetouristique:site' %}">
+                                            <h6>Sites touristiques</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="1s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-5.png' %} " alt="">
+                                        <a href="{% url 'contact:contact' %}">
+                                            <h6>Contact</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Catagory Area End ***** -->
+
+    <!-- ***** About Area Start ***** -->
+    <section class="dorne-about-area section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content text-center">
+                        <h2>Découvrez la Région de l'adamaoua avec  <br><span>My Tourist</span></h2>
+                        <p>Votre guide touristique dans toute la région de l'adamaoua, Région chateau d'eau du Cameroun régorgeant d'une multiplicité de richessse géographique, climatique et culturelle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area End ***** -->
+
+    <!-- ***** Editor Pick Area Start ***** -->
+    <section class="dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100" style="background-image: url(/static/img/bg-img/hero-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <span></span>
+                        <h4>Les sites que vous devez visiter</h4>
+                        <p>les sites les plus visités</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="{% static 'img/bg-img/editor-1.jpg' %} " alt="">
+                        <div class="editors-pick-info">
+                            <div class="places-total-destinations d-flex">
+                                <a href="#">Chutes de Tello</a>
+                                <a href="#">1643 Visites</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="{% static 'img/bg-img/editor-2.jpg' %} " alt="">
+                        <div class="editors-pick-info">
+                            <div class="places-total-destinations d-flex">
+                                <a href="#">Bois de Mardoc</a>
+                                <a href="#">943 visites</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="{% static 'img/bg-img/editor-3.jpg' %} " alt="">
+                        <div class="editors-pick-info">
+                            <div class="places-total-destinations d-flex">
+                                <a href="#">Lamidat de Ngaoundéré</a>
+                                <a href="#">243 Visites</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Editor Pick Area End ***** -->
+
+    <!-- ***** Features Destinations Area Start ***** -->
+    <section class="dorne-features-destinations-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading dark text-center">
+                        <span></span>
+                        <h4>Les meilleures hotels de la région</h4>
+                        <p>Le confort au rendez-vous</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="features-slides owl-carousel">
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src=" {% static 'img/bg-img/feature-1.jpg' %} " alt="">
+                            <!-- Price -->
+                            <div class="price-start">
+                                <p>à partir de 25000 Fcfa/nuit</p>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>ADAMAOUA</h5>
+                                    <p>le luxe</p>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-2.jpg' %} " alt="">
+                            <!-- Price -->
+                            <div class="price-start">
+                                <p>à partir de 15000 Fcfa/nuit</p>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>TRANSCAM</h5>
+                                    <p>Le Calme</p>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-3.jpg' %} " alt="">
+                            <!-- Price -->
+                            <div class="price-start">
+                                <p>à partir de 10000 Fcfa/nuit</p>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>MENTOM</h5>
+                                    <p>Spectaculaire</p>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-4.jpg' %} " alt="">
+                            <!-- Price -->
+                            <div class="price-start">
+                                <p>FROM $59/night</p>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>Greece</h5>
+                                    <p>Sunny</p>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-5.jpg' %} " alt="">
+                            <!-- Price -->
+                            <div class="price-start">
+                                <p>FROM $59/night</p>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>de la gare</h5>
+                                    <p>Proximité</p>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Destinations Area End ***** -->
+
+    <!-- ***** Features Restaurant Area Start ***** -->
+    <section class="dorne-features-restaurant-area bg-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <span></span>
+                        <h4>Spécialités Culinaires de la Région</h4>
+                        <p>Découvrez des plats traditionnels nationaux et internationaux</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="features-slides owl-carousel">
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-6.jpg' %} " alt="">
+                            <!-- Rating & Map Area -->
+                            <div class="ratings-map-area d-flex">
+                                <a href="#">8.5</a>
+                                <a href="#"><img src="{% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>pilé</h5>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-7.jpg' %} " alt="">
+                            <!-- Rating & Map Area -->
+                            <div class="ratings-map-area d-flex">
+                                <a href="#">9.5</a>
+                                <a href="#"><img src=" {% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>Couscous & gombo</h5>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-8.jpg' %} " alt="">
+                            <!-- Rating & Map Area -->
+                            <div class="ratings-map-area d-flex">
+                                <a href="#">8.2</a>
+                                <a href="#"><img src="{% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>Kilichi</h5>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-9.jpg' %} " alt="">
+                            <!-- Rating & Map Area -->
+                            <div class="ratings-map-area d-flex">
+                                <a href="#">8.7</a>
+                                <a href="#"><img src="{% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>Eru</h5>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Features Area -->
+                        <div class="single-features-area">
+                            <img src="{% static 'img/bg-img/feature-10.jpg' %} " alt="">
+                            <!-- Rating & Map Area -->
+                            <div class="ratings-map-area d-flex">
+                                <a href="#">9.8</a>
+                                <a href="#"><img src="{% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                            <div class="feature-content d-flex align-items-center justify-content-between">
+                                <div class="feature-title">
+                                    <h5>Ndolé</h5>
+                                </div>
+                                <div class="feature-favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Restaurant Area End ***** -->
+
+    <!-- ***** Features Events Area Start ***** -->
+    <section class="dorne-features-events-area bg-img bg-overlay-9 section-padding-100-50" style="background-image: url(/static/img/bg-img/hero-3.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <span></span>
+                        <h4>Festivals evenementiels et culturels</h4>
+                        <p>festivals artistiques et cultureld dans la région de l'Adamaoua</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.2s">
+                        <div class="feature-events-thumb">
+                            <img src="{% static 'img/bg-img/event-1.jpg' %} " alt="">
+                            <div class="date-map-area d-flex">
+                                <a href="#">26 Nov</a>
+                                <a href="#"><img src="{% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                        </div>
+                        <div class="feature-events-content">
+                            <h5>Fantasia du lamidat de Ngaoundéré</h5>
+                            <h6>Ngaoundéré</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                        </div>
+                        <div class="feature-events-details-btn">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.3s">
+                        <div class="feature-events-thumb">
+                            <img src=" {% static 'img/bg-img/event-2.jpg' %} " alt="">
+                            <div class="date-map-area d-flex">
+                                <a href="#">26 Nov</a>
+                                <a href="#"><img src=" {% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                        </div>
+                        <div class="feature-events-content">
+                            <h5>Ngondo</h5>
+                            <h6>Centre commercial de Ngaoundéré</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                        </div>
+                        <div class="feature-events-details-btn">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.4s">
+                        <div class="feature-events-thumb">
+                            <img src="{% static 'img/bg-img/event-3.jpg' %} " alt="">
+                            <div class="date-map-area d-flex">
+                                <a href="#">26 Nov</a>
+                                <a href="#"><img src=" {% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                        </div>
+                        <div class="feature-events-content">
+                            <h5>Concert de Musique du Sahel</h5>
+                            <h6>Place de Fête de Ngaoundéré</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                        </div>
+                        <div class="feature-events-details-btn">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.5s">
+                        <div class="feature-events-thumb">
+                            <img src="{% static 'img/bg-img/event-4.jpg' %} " alt="">
+                            <div class="date-map-area d-flex">
+                                <a href="#">26 Nov</a>
+                                <a href="#"><img src=" {% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                        </div>
+                        <div class="feature-events-content">
+                            <h5>Sahel Fashion</h5>
+                            <h6>Cinéma Adamaoua</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                        </div>
+                        <div class="feature-events-details-btn">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.6s">
+                        <div class="feature-events-thumb">
+                            <img src="{% static 'img/bg-img/event-5.jpg' %} " alt="">
+                            <div class="date-map-area d-flex">
+                                <a href="#">26 Nov</a>
+                                <a href="#"><img src=" {% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                        </div>
+                        <div class="feature-events-content">
+                            <h5>Festival international  du film mixte</h5>
+                            <h6>Ngaoundéré</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                        </div>
+                        <div class="feature-events-details-btn">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.7s">
+                        <div class="feature-events-thumb">
+                            <img src=" {% static 'img/bg-img/event-6.jpg' %} " alt="">
+                            <div class="date-map-area d-flex">
+                                <a href="#">26 Nov</a>
+                                <a href="#"><img src="{% static 'img/core-img/map.png' %} " alt=""></a>
+                            </div>
+                        </div>
+                        <div class="feature-events-content">
+                            <h5>Toournée nationale Lady Ponce</h5>
+                            <h6>Place du Ngondo</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                        </div>
+                        <div class="feature-events-details-btn">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
